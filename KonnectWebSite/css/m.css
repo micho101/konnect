@@ -1,0 +1,639 @@
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html
+{
+    font-family: "Lucida Sans", sans-serif;
+    height: 94%;
+}
+
+body
+{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 8rem;
+    background-color: #4169e1;
+    background-image: url("../images/bgpic.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navbar */
+
+.navtop
+{
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    z-index: 3;
+    background-color: #f2f2f2;
+    text-align: center;
+    max-height: 100%;
+    overflow: auto;
+    border-bottom: 1px solid black;
+}
+
+.navtop.resp
+{
+    border-bottom: 0;
+}
+
+.navtop.resp .bars
+{
+    background-color: #2244ff;
+    color: #ffffff;
+}
+
+.navtopdrop
+{
+    display: none; 
+    position: fixed;
+    padding-top: 55px;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    z-index: 2;
+    background-color: #f2f2f2;
+    max-height: 100%;
+    overflow: auto;
+    border-bottom: 1px solid black;
+}
+
+.navtopdrop a
+{
+    display: none;
+    text-align: left;
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    padding: 0.86rem;
+}
+
+.navtopdrop a:hover, .navtopdrop a:active
+{
+    background-color: #2244ff;
+    color: #ffffff;
+}
+
+.navtopdrop.resp, .navtopdrop.resp a
+{
+    display: block;
+}
+
+.logo
+{
+    max-width: 25%;
+    height: 51px;
+    display: inline-block;
+}
+
+.bars
+{
+    display: inline-block !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 20px !important;
+    height: 100%;
+    text-decoration: none;
+    color: #000000;
+    padding: 0.86rem;
+}
+
+.bars:hover
+{
+    background-color: #2244ff;
+    color: #ffffff;
+}
+
+.menulogo
+{
+    width: 10px;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+.indent
+{
+    margin-left: 10%;
+}
+
+.konnect
+{
+    display: none;
+}
+
+/* Body Content */
+
+.cont
+{
+    position: relative;
+    top: 51px;
+    z-index: 1;
+}
+
+.footer
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    color: #008000;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.slideshow-container
+{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 117px;
+}
+
+.container
+{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    border: 1px solid black;
+    margin-top: 40px;
+    padding: 6%;
+}
+
+.prd-container
+{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    border: 1px solid black;
+    margin-top: 40px;
+    padding: 6%;
+}
+
+.aside
+{
+	display: none;
+}
+
+/* Hide the images by default */
+.mySlides 
+{
+    display: none;
+    z-index: 1;
+}
+
+/* The dots/bullets/indicators */
+.dot 
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px 80px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover 
+{
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade 
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade 
+{
+    from {opacity: .2}
+    to {opacity: 1} 
+    -webkit-animation-direction: alternate-reverse;  
+}
+
+@keyframes fade 
+{
+    from {opacity: .2}
+    to {opacity: 1}
+    animation-direction: alternate-reverse;
+}
+
+/* Text Design */
+h1
+{
+    color: #008000;
+    text-shadow: 5px 5px 8px gray;
+    text-align: center;
+}
+
+h2
+{
+    color: #008000;
+    text-shadow: 5px 5px 8px gray;
+    font-size: 1.3rem;
+}
+
+h3
+{
+    color: #008000;
+    text-shadow: 5px 5px 8px gray;
+}
+
+p, li, td
+{
+    font-size: 0.9rem;
+}
+
+.footer p
+{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1rem !important;
+}
+
+.pgreen
+{
+    color: #008000;
+    font-weight: bold;
+    font-style: italic;
+}
+
+ol
+{
+    list-style-type: lower-alpha;
+}
+
+ol[id="addp"]
+{
+    list-style-type: upper-alpha;
+}
+
+ol[id="addp"] h3
+{
+    margin-top: 25px;
+}
+
+.j
+{
+    text-align: left;
+} 
+
+/* Product Images */
+.c1
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+	text-align: center;
+}
+
+/* Illustrative Images */
+.c2
+{
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.c3
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.c4
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.ctext
+{
+	display: block;
+	margin: 0 auto;
+    text-align: center;
+}
+
+.gap
+{
+    margin-top: 40px;
+}
+
+.mw80
+{
+    max-width: 80% !important;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+
+.captiondiv
+{
+	margin-top: 20px;
+}
+
+.ledsize
+{
+	width: 240px;
+	height: 144px;
+}
+
+li
+{
+    line-height: 1.5;
+}
+
+/* Offset Product Links */
+h2
+{
+    position: relative;
+}
+
+h2 span
+{
+    position:absolute;
+    top: -70px;
+}
+
+/* Contact */
+.map-container
+{
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    padding-top: 70%;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.map
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Form */
+
+.form-container1
+{
+	display: none;
+}
+
+textarea
+{
+	resize: none;
+	width: 100%;
+	height: 20vh;
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px)
+{
+
+    .navtop
+    {
+        display: none;
+    }
+	
+	.navtopdrop
+	{
+		display: none;
+	}
+		
+	.navtopdrop.resp
+	{
+	display: none;	
+	}
+		
+    .dnavbar
+    {
+		position: fixed;
+		padding-top: 55px;
+		position: fixed !important;
+		top: 0 !important;
+		width: 100%;
+		z-index: 2;
+		background-color: #f2f2f2;
+		max-height: 100%;
+		overflow: auto;
+		border-bottom: 1px solid black;
+        display: inline-block;
+		padding: 0;
+        height: 56px;
+    }
+	
+    .dnavbar a
+    {
+		text-align: left;
+		text-decoration: none;
+		color: #000000;
+		font-size: 14px;
+		padding: 0.86rem;
+        display: inline-block;
+		padding: 18px;
+		height: 100%;
+    }
+
+	.dnavbar a:hover, .dnavbar a:active
+	{
+		background-color: #2244ff;
+		color: #ffffff;
+	}
+
+	
+    .hide
+    {
+        display: none;
+    }
+    
+    .konnect
+    {
+        display: block;
+        width: 350px;
+        margin: 10px auto;
+    }
+
+    .slideshow-container
+    {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+	
+	.flexy
+	{
+		display: flex;
+	}
+	
+	.prd-container
+	{
+		flex: 3;
+		padding: 3%;
+		margin: auto 50px;
+	}
+	
+	.aside
+	{
+		display: inline-block;
+		width: 20%;
+		height: 85vh;
+		margin-left: 20px;
+		background-color: #ffffff;
+		border: 1px solid black;
+		padding: 0 1%;
+		position: sticky;
+		top: 73px;
+		overflow: auto;
+	}
+	
+	.aside p
+	{
+		text-align: center;
+		font-weight: bold;
+		color: #000000;
+	}
+	
+	.aside p:hover
+	{
+		color: #008000;
+		text-shadow: 5px 5px 8px gray;
+	}
+	
+	.aside a
+	{
+		text-decoration: none;
+	}
+	
+	.minilogo
+	{
+		width: 20px;
+		display: block;
+		margin: 10% auto 5% auto;
+	}
+	
+	.ctact-container
+	{
+		width: 50%;
+		float: left;
+		height: 55vh;
+	}
+		
+	.map-container
+	{
+		margin-bottom: -8%;
+		margin-top: 50px;
+		padding-top: 70%;
+	}
+
+    .map
+    {
+        position: absolute;
+        top: 0;
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        height: 80%;
+        border: 0;
+    }
+	
+	.form-container1
+	{
+		display: block;
+		width: 50%;
+		float: left;
+		padding-left: 10%;
+		clear: right;
+		height: 55vh;
+	}
+	
+	.form-container2
+	{
+		display: none;
+	}
+	
+	.ctext
+	{
+		text-align: center;
+		max-width: 80%;
+	}
+	
+	.c3
+	{
+		display: inline-block;
+		margin-right: 1%;
+		margin-left: 0;
+	}
+	
+	.c4
+	{
+		display: inline-block;
+		margin: 10px 8px;
+	}
+			
+	.centeraddp ul
+	{
+		vertical-align: middle;
+	}
+	
+	.float
+	{
+		float: left;
+	}
+	
+	.clearfix
+	{
+		max-width: 100%;
+		line-height: 200px;
+		min-height: 200px;
+	}
+	
+	.centeraddp
+	{
+		margin: auto;
+		max-width: 904px;
+		padding: 20px;
+	}
+	
+	.clearfix::after
+	{
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	.mgright
+	{
+		padding-right: 39px;
+	}
+	
+	.captiondiv
+	{
+		max-width: 500px;
+		margin: 30px auto 10px auto;
+	}
+}
